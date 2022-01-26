@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.fda2c78a.css",
+    "main.css": "/static/css/main.13bf3d5b.css",
     "main.js": "/static/js/main.b82112f2.js",
     "static/js/787.6c2c6fb1.chunk.js": "/static/js/787.6c2c6fb1.chunk.js",
     "static/media/dummypic.jpg": "/static/media/dummypic.553d5188656040de481c.jpg",
@@ -33,12 +33,12 @@
     "static/media/iconPhoneAccent.svg": "/static/media/iconPhoneAccent.d82df049e2a22e65784d8a90629f1cd4.svg",
     "static/media/youtubeIcon.svg": "/static/media/youtubeIcon.d97eb5d786ed081287ac728371dd7672.svg",
     "static/media/facebookIcon.svg": "/static/media/facebookIcon.0d724a3844c289cb3e968938f68f3515.svg",
-    "main.fda2c78a.css.map": "/static/css/main.fda2c78a.css.map",
+    "main.13bf3d5b.css.map": "/static/css/main.13bf3d5b.css.map",
     "main.b82112f2.js.map": "/static/js/main.b82112f2.js.map",
     "787.6c2c6fb1.chunk.js.map": "/static/js/787.6c2c6fb1.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fda2c78a.css",
+    "static/css/main.13bf3d5b.css",
     "static/js/main.b82112f2.js"
   ]
 }
