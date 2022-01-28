@@ -1,0 +1,18 @@
+@import '../../styles/variables.module.scss';
+
+.values {
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+  img.s-shape-up {
+    left: 0;
+    top: 0;
+    transform: translateY(-50%) rotate(-45deg);
+  }
+  .logo-value{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+}

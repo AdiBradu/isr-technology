@@ -1,0 +1,13 @@
+@import '../../styles/variables.module.scss';
+
+.slide {
+  height: calc(6 * #{$unit});
+  width: auto;
+  @media (min-width: $lg) {
+    height: calc(8 * #{$unit});
+  }
+  img {
+    height: 100%;
+    width: auto;
+  }
+}

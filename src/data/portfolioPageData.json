@@ -1,0 +1,65 @@
+[
+  {
+    "id": 1,
+    "title": "Managed IT",
+    "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tempus quam pellentesque nec nam aliquam sem. Aliquet nec ullamcorper sit amet risus nullam eget. Urna nunc id cursus metus aliquam eleifend mi. Felis imperdiet proin fermentum leo vel orci porta non pulvinar. Ultrices in iaculis nunc sed augue. Malesuada pellentesque elit eget gravida cum sociis natoque penatibus.",
+    "icon": "/build/icons/iconManagedIT.svg",
+    "link": "services/managed-it"
+  },
+  {
+    "id": 2,
+    "title": "Security",
+    "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant. Massa sapien faucibus et molestie ac feugiat sed. Vitae congue eu consequat ac felis donec et. Scelerisque viverra mauris in aliquam sem. Ullamcorper sit amet risus nullam eget felis eget. Hac habitasse platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper.",
+    "icon": "/build/icons/iconSecurity.svg",
+    "link": "services/security"
+  },
+  {
+    "id": 3,
+    "title": "Audio/Visual",
+    "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Rhoncus dolor purus non enim praesent elementum facilisis. Tincidunt praesent semper feugiat nibh sed pulvinar proin. Varius quam quisque id diam vel quam elementum. Fermentum dui faucibus in ornare quam viverra orci. Ornare arcu dui vivamus arcu. Eget est lorem ipsum dolor sit amet consectetur adipiscing elit.",
+    "icon": "/build/icons/iconAudioVisual.svg",
+    "link": "services/audio-visual"
+  },
+  {
+    "id": 4,
+    "title": "Wireless Systems",
+    "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vestibulum mattis ullamcorper velit sed ullamcorper morbi tincidunt. In aliquam sem fringilla ut morbi tincidunt augue interdum. Ultrices gravida dictum fusce ut. Bibendum est ultricies integer quis auctor elit sed vulputate. Metus vulputate eu scelerisque felis imperdiet proin fermentum leo. Lorem sed risus ultricies tristique.",
+    "icon": "/build/icons/iconWirelessSystems.svg",
+    "link": "services/wireless-systems"
+  },
+  {
+    "id": 5,
+    "title": "Cloud Services",
+    "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dolor sit amet consectetur adipiscing elit ut aliquam. Blandit turpis cursus in hac habitasse platea. Tortor vitae purus faucibus ornare. Vitae auctor eu augue ut lectus arcu. Vel fringilla est ullamcorper eget nulla facilisi etiam dignissim. Aliquet risus feugiat in ante metus dictum at tempor commodo.",
+    "icon": "/build/icons/iconCloudServices.svg",
+    "link": "services/cloud-services"
+  },
+  {
+    "id": 6,
+    "title": "Cybersecurity",
+    "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Magna eget est lorem ipsum. Ut enim blandit volutpat maecenas volutpat. Nulla facilisi morbi tempus iaculis. Ut faucibus pulvinar elementum integer enim neque volutpat. Molestie at elementum eu facilisis sed odio morbi quis. Faucibus interdum posuere lorem ipsum dolor sit amet consectetur adipiscing. Amet mattis vulputate enim nulla.",
+    "icon": "/build/icons/iconCybersecurity.svg",
+    "link": "services/cybersecurity"
+  },
+  {
+    "id": 7,
+    "title": "VOIP",
+    "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Risus feugiat in ante metus dictum at tempor. Habitant morbi tristique senectus et netus et. Eu tincidunt tortor aliquam nulla facilisi cras. Bibendum neque egestas congue quisque egestas. Egestas dui id ornare arcu odio ut sem.",
+    "icon": "/build/icons//iconVOIP.svg",
+    "link": "services/voip"
+  },
+  {
+    "id": 8,
+    "title": "Networking",
+    "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Maecenas sed enim ut sem viverra aliquet eget sit. Cursus eget nunc scelerisque viverra. Non tellus orci ac auctor augue mauris. Vitae auctor eu augue ut lectus arcu bibendum at. Cursus turpis massa tincidunt dui ut ornare lectus sit amet. Faucibus pulvinar elementum integer enim neque volutpat ac tincidunt vitae. Donec adipiscing tristique risus nec feugiat in fermentum posuere.",
+    "icon": "/build/icons/iconNetworking.svg",
+    "link": "services/networking"
+  },
+  {
+    "id": 9,
+    "title": "Smarthome Automation",
+    "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Maecenas sed enim ut sem viverra aliquet eget sit. Cursus eget nunc scelerisque viverra. Non tellus orci ac auctor augue mauris. Vitae auctor eu augue ut lectus arcu bibendum at. Cursus turpis massa tincidunt dui ut ornare lectus sit amet. Faucibus pulvinar elementum integer enim neque volutpat ac tincidunt vitae. Donec adipiscing tristique risus nec feugiat in fermentum posuere.",
+    "icon": "/build/icons/iconSmarthome.svg",
+    "link": "services/smarthome-automation"
+  }
+]

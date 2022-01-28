@@ -1,0 +1,70 @@
+@import '../../styles/variables.module.scss';
+
+.switcher {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: $unit;
+  .toggle-switch {
+    position: relative;
+    display: inline-block;
+    width: calc(3 * #{$unit});
+    height: calc(1.5 * #{$unit});
+  }
+  .toggle-switch input[type='checkbox'] {
+    display: none;
+  }
+  .toggle-switch .switch {
+    position: absolute;
+    cursor: pointer;
+    border-radius: calc(1 * #{$unit});
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transition: background-color 0.2s ease;
+  }
+  .toggle-switch .switch::before {
+    position: absolute;
+    content: '';
+    left: calc(0.25 * #{$unit});
+    top: calc(0.25 * #{$unit});
+    width: calc(1 * #{$unit});
+    height: calc(1 * #{$unit});
+    // background-color: $secondaryColor;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+  }
+}
+
+[data-theme='light'] {
+  .toggle-switch .switch {
+    background-color: $primaryColorLight;
+  }
+  .toggle-switch .switch::before {
+    background-color: $secondaryColor;
+  }
+  .toggle-switch input[type='checkbox']:checked + .switch::before {
+    transform: translateX(calc(1.5 * #{$unit}));
+    background-color: $primaryColorLight;
+  }
+  .toggle-switch input[type='checkbox']:checked + .switch {
+    background-color: $secondaryColor;
+  }
+}
+
+[data-theme='dark'] {
+  .toggle-switch .switch {
+    background-color: $secondaryColor;
+  }
+  .toggle-switch .switch::before {
+    background-color: $secondaryColor;
+  }
+  .toggle-switch input[type='checkbox']:checked + .switch::before {
+    transform: translateX(calc(1.5 * #{$unit}));
+    background-color: $secondaryColor;
+  }
+  .toggle-switch input[type='checkbox']:checked + .switch {
+    background-color: $primaryColorLight;
+  }
+}

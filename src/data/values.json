@@ -1,0 +1,104 @@
+[
+  {
+    "id": 1,
+    "title": "assistance",
+    "icon": {
+      "dark": "/build/icons/values/assistanceIconDarkBg.svg",
+      "light": "/build/icons/values/assistanceIconLightBg.svg"
+    },
+    "coordonates": {
+      "x": "15deg",
+      "y": "-15deg"
+    },
+    "animation": "animateAssistance",
+    "rotate": {
+      "second": 15,
+      "third": -25
+    }
+  },
+  {
+    "id": 2,
+    "title": "quality",
+    "icon": {
+      "dark": "/build/icons/values/qualityIconDarkBg.svg",
+      "light": "/build/icons/values/qualityIconLightBg.svg"
+    },
+    "coordonates": {
+      "x": "75deg",
+      "y": "-75deg"
+    },
+    "animation": "animateQuality",
+    "rotate": {
+      "second": -45,
+      "third": -85
+    }
+  },
+  {
+    "id": 3,
+    "title": "support",
+    "icon": {
+      "dark": "/build/icons/values/supportIconDarkBg.svg",
+      "light": "/build/icons/values/supportIconLightBg.svg"
+    },
+    "coordonates": {
+      "x": "135deg",
+      "y": "-135deg"
+    },
+    "animation": "animateSupport",
+    "rotate": {
+      "second": -105,
+      "third": -145
+    }
+  },
+  {
+    "id": 4,
+    "title": "relationship",
+    "icon": {
+      "dark": "/build/icons/values/relationshipIconDarkBg.svg",
+      "light": "/build/icons/values/relationshipIconLightBg.svg"
+    },
+    "coordonates": {
+      "x": "195deg",
+      "y": "-195deg"
+    },
+    "animation": "animateRelationship",
+    "rotate": {
+      "second": -1655,
+      "third": -205
+    }
+  },
+  {
+    "id": 5,
+    "title": "guidance",
+    "icon": {
+      "dark": "/build/icons/values/guidanceIconDarkBg.svg",
+      "light": "/build/icons/values/guidanceIconLightBg.svg"
+    },
+    "coordonates": {
+      "x": "255deg",
+      "y": "-255deg"
+    },
+    "animation": "animateGuidance",
+    "rotate": {
+      "second": -225,
+      "third": -265
+    }
+  },
+  {
+    "id": 6,
+    "title": "solution",
+    "icon": {
+      "dark": "/build/icons/values/solutionIconDarkBg.svg",
+      "light": "/build/icons/values/solutionIconLightBg.svg"
+    },
+    "coordonates": {
+      "x": "315deg",
+      "y": "-315deg"
+    },
+    "animation": "animateSolution",
+    "rotate": {
+      "second": -284,
+      "third": -325
+    }
+  }
+]

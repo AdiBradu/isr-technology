@@ -1,0 +1,48 @@
+@import '../../styles/variables.module.scss';
+
+.slider {
+  position: relative;
+  display: flex;
+  overflow-x: auto;
+  gap: calc(4 * #{$unit});
+  padding: 0 calc(4 * #{$unit});
+  padding-bottom: calc(0.5 * #{$unit});
+  // height: 100%;
+  @media (min-width: $xxl) {
+    gap: calc(6 * #{$unit});
+  }
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  &::-webkit-scrollbar {
+    width: calc(0.5 * #{$unit});
+  }
+  &::-webkit-scrollbar-thumb {
+    border: 1px solid transparent;
+    border-radius: calc(2 * #{$unit});
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.4);
+  }
+}
+
+[data-theme='light'] {
+  .slider{
+    &::-webkit-scrollbar-track {
+      background: rgba(255, 255, 255, 0.3);
+    }
+    &::-webkit-scrollbar-thumb {
+      background: rgba(0, 0, 0, 0.05);
+    }
+  }
+}
+
+[data-theme='dark'] {
+  .slider{
+    &::-webkit-scrollbar-track {
+      background: rgba(255, 255, 255, 0.03);
+    }
+    &::-webkit-scrollbar-thumb {
+      background: rgba(0, 0, 0, 0.2);
+    }
+  }
+}

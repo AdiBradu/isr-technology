@@ -1,0 +1,25 @@
+@import './colors.scss';
+@import './layouts.scss';
+
+:export {
+  //colors
+  primaryColor: $primaryColor;
+  primaryColorDark: $primaryColorDark;
+  primaryColorLight: $primaryColorLight;
+  secondaryColor: $secondaryColor;
+  secondaryColorDark: $secondaryColorDark;
+  secondaryColorLight: $secondaryColorLight;
+  backgroundDark: $backgroundDark;
+  backgroundLight: $backgroundLight;
+  cardBgDark: $cardBgDark;
+  cardBgLight: $cardBgLight;
+  //breakingpoints
+  xs: $xs;
+  sm: $sm;
+  md: $md;
+  lg: $lg;
+  xl: $xl;
+  xxl: $xxl;
+  //unit
+  unit: $unit;
+}

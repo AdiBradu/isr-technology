@@ -1,0 +1,62 @@
+$primaryColor: #1d1934;
+$primaryColorDark: #130f33;
+$primaryColorLight: #201e4c;
+
+$secondaryColor: #1dcad3;
+$secondaryColorDark: #1bb2b2;
+$secondaryColorLight: #0ee5df;
+
+$backgroundDark: #130f33;
+$backgroundLight: #fbfbfb;
+
+$cardBgDark: rgba(29, 25, 52, 0.7);
+$cardBgLight: rgba(240, 240, 240, 0.7);
+
+$accent: rgba(227, 29, 147, 1);
+
+//light theme
+[data-theme='light'] {
+  color: $primaryColor;
+  background-color: $backgroundLight;
+  input,
+  textarea {
+    background-color: $cardBgLight;
+    outline: $secondaryColor solid 0px;
+    border: 1px solid rgba(27, 178, 178, 0.5);
+    color: $primaryColor;
+    &::placeholder {
+      color: $secondaryColor;
+      opacity: 0.7;
+    }
+  }
+}
+//dark theme
+[data-theme='dark'] {
+  color: $backgroundLight;
+  background-color: $primaryColorDark;
+  input,
+  textarea {
+    background-color: rgba(19, 15, 51, 0.7);
+    outline: $secondaryColor solid 0px;
+    border: 1px solid rgba(27, 178, 178, 0.5);
+    color: $backgroundLight;
+    &::placeholder {
+      color: $secondaryColor;
+      opacity: 0.7;
+    }
+  }
+}
+
+:export {
+  primaryColor: $primaryColor;
+  primaryColorDark: $primaryColorDark;
+  primaryColorLight: $primaryColorLight;
+  secondaryColor: $secondaryColor;
+  secondaryColorDark: $secondaryColorDark;
+  secondaryColorLight: $secondaryColorLight;
+  backgroundDark: $backgroundDark;
+  backgroundLight: $backgroundLight;
+  cardBgDark: $cardBgDark;
+  cardBgLight: $cardBgLight;
+  accent: $accent;
+}

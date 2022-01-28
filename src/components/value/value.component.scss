@@ -1,0 +1,60 @@
+@import '../../styles/variables.module.scss';
+
+.value {
+  position: absolute;
+  z-index: 100;
+  top: 50%;
+  left: 50%;
+  // background-color: rgba(240, 248, 255, 0.6);
+  transform-origin: center center;
+  max-height: 320px;
+  max-width: 320px;
+  @media (orientation: portrait) {
+    height: 70vw;
+    width: 70vw;
+  }
+  @media (orientation: portrait) and (min-width: $md) {
+    height: 50vw;
+    width: 50vw;
+  }
+  @media (orientation: landscape) {
+    height: 50vh;
+    width: 50vh;
+  }
+  .value-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: calc(0.5 * #{$unit});
+    transform-origin: center center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    p {
+      font-weight: 500;
+    }
+    @media (orientation: portrait) {
+      .value-icon {
+        height: auto;
+        width: 8vh;
+        max-width: 64px;
+      }
+    }
+    @media (orientation: landscape) {
+      .value-icon {
+        height: auto;
+        width: 8vw;
+        max-width: 64px;
+      }
+    }
+  }
+}
+
+[data-theme='light'] {
+  .value-group {
+    p {
+      color: $secondaryColor;
+    }
+  }
+}
