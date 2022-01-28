@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useEffect, Fragment, useContext } from 'react';
 import './portfolioItem.component.scss';
 import LayoutPage from '../../components/layoutPage/layoutPage.component.jsx';
 import PortfolioImage from '../../assets/images/dummypic.jpg';
@@ -20,21 +20,28 @@ export default function PortfolioItem(props) {
   const { portfolioPageParagraphObj } = useContext(AppContext);
   const [portfolioPageParagraph, setPortfolioPageParagraph] = portfolioPageParagraphObj;
 
-  let { slug } = useLocation();
-  console.log(slug)
+  let location = useLocation();
+  const pathname = location.pathname
+
   return (
-    <LayoutPage>
-      <div className="image-socket">
-        <div className="overlay"></div>
-        <img src={PortfolioImage} alt="portfolio" className="portfolio-image" />
-      </div>
-      <div className="icon-set container">
-        <Icon icon={portfolioPageIcon} class={'portfolio-item-icon'} />
-        <SectionH1 h1={portfolioPageTitle} />
-      </div>
-      <div className="text-content container">
-        <Paragraph paragraph={portfolioPageParagraph} />
-      </div>
-    </LayoutPage>
+    portfolioPageData.map( data => {
+      if(`/${data.link}` === location.pathname){
+        return(
+          <LayoutPage>
+            <div className="image-socket">
+              <div className="overlay"></div>
+              <img src={PortfolioImage} alt="portfolio" className="portfolio-image" />
+            </div>
+            <div className="icon-set container">
+              <Icon icon={data.icon} class={'portfolio-item-icon'} />
+              <SectionH1 h1={data.title} />
+            </div>
+            <div className="text-content container">
+              <Paragraph paragraph={data.paragraph} />
+            </div>
+          </LayoutPage>
+        )
+      }
+    })
   );
 }

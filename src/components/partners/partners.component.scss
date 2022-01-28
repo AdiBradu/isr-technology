@@ -6,7 +6,7 @@
   width: 100%;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, auto);
+  grid-template-rows: repeat(2, 1fr);
   gap: calc(4 * #{$unit});
   padding-bottom: calc(8 * #{$unit});
   overflow-x: hidden;
@@ -17,28 +17,15 @@
     grid-row-start: 1;
     grid-row-end: 2;
   }
-  .slider-socket {
+  .slider {
     grid-column-start: 1;
     grid-column-end: 5;
     grid-row-start: 2;
     grid-row-end: 3;
-    position: relative;
-    overflow-x: hidden;
-    height: auto;
-    .prev,
-    .next {
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      width: calc(4 * #{$unit});
-      z-index: 100;
-    }
-    .prev {
-      left: 0;
-    }
-    .next {
-      right: 0;
-    }
+    height: 100%;
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
   }
   .section-intro {
     padding: 0 $unit;
@@ -52,6 +39,7 @@
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
+    grid-template-rows: repeat(1, 1fr);
    .section-intro{
       padding: 0;
       grid-column-start: 3;
@@ -59,11 +47,11 @@
       grid-row-start: 1;
       grid-row-end: 2;
    }
-   .slider-socket{
+   .slider{
       grid-column-start: 1;
-      grid-column-end: 5;
-      grid-row-start: 2;
-      grid-row-end: 3;
+      grid-column-end: 3;
+      grid-row-start: 1;
+      grid-row-end: 2;
    }
  }
 }
@@ -77,31 +65,29 @@
 @media (min-width: $xl) {
   .partners{
     max-width: 992px;
-    .slider-socket{
-      grid-column-start: 2;
-      grid-column-end: 5;
-      grid-row-start: 2;
-      grid-row-end: 3;
-    }
+    // .slider{
+    //   grid-column-start: 2;
+    //   grid-column-end: 5;
+    //   grid-row-start: 2;
+    //   grid-row-end: 3;
+    // }
   }
 }
 
 @media (min-width: $xxl) {
   .partners{
     max-width: 1200px;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, auto);
     .section-intro{
-      grid-column-start: 1;
-      grid-column-end: 2;
+      grid-column-start: 4;
+      grid-column-end: 5;
       grid-row-start: 1;
       grid-row-end: 2;
     }
-    .slider-socket{
-      grid-column-start: 2;
-      grid-column-end: 5;
-      grid-row-start: 2;
-      grid-row-end: 3;
+    .slider{
+      grid-column-start: 3;
+      grid-column-end: 4;
+      grid-row-start: 1;
+      grid-row-end: 2;
     }
   }
 }

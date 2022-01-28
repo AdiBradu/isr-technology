@@ -51,7 +51,7 @@
 .s-shape-up, .s-shape-down {
   img{
     width: calc(1.618 * 100vw);
-    filter: blur(64px);
+    filter: blur(32px);
     @media (orientation: landscape) and (min-width: $md) {
       width: calc(1.618 * 50vw);
     }
@@ -69,7 +69,7 @@
 [data-theme='dark'] {
   .s-shape-up, .s-shape-down {
     img{
-      opacity: 0.1;
+      opacity: 0.05;
     }
   }
 }

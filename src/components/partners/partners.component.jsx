@@ -12,11 +12,9 @@ export default function Partners() {
           'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pellentesque egestas nunc, tincidunt aliquam sit aliquet aliquam.'
         }
       />
-      <div className="slider-socket">
-        <div className="prev"></div>
-        <div className="next"></div>
-        <Slider />
-      </div>
+
+      <Slider />
+
     </section>
   );
 }
