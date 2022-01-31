@@ -3,6 +3,7 @@ const cors = require('cors');
 const bodyParser = require('body-parser');
 const path = require('path');
 const nodemailer = require('nodemailer');
+const { default: axios } = require('axios');
 require('dotenv').config();
 
 const app = express();
@@ -18,7 +19,19 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 app.post('/contact', async (req, res) => {
-  let { name, email, message } = req.body;
+  
+  let { name, email, message, token } = req.body;
+
+  async function validateHuman(token) {
+    const secret = process.env.RECAPTCHA_SECRETE_KEY;
+    const response = await axios.post(`https://www.google.com/recaptcha/api/siteverify?secret=${secret}&response=${token}`)
+    if(response.data.success)
+    console.log('Human');
+    else
+    console.log('BOT!!!');
+  }
+
+  validateHuman(token);
 
   let parcel =
     `<p>Name: ${name}</p>` +
