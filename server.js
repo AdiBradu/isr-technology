@@ -26,51 +26,60 @@ app.post('/contact', async (req, res) => {
     const response = await axios.post(
       `https://www.google.com/recaptcha/api/siteverify?secret=${secret}&response=${token}`,
     );
-    if (response.data.success) console.log('Human');
-    else console.log('BOT!!!');
+    if (response.data.success) {
+      console.log('Human');
+      return true;
+    } else {
+      console.log('Bot');
+      return false;
+    }
   }
 
-  validateHuman(token);
+  validateHuman(token).then((result) => {
+    if (result) {
+      console.log('User is human. Proceed to send email.');
 
-  let parcel =
-    `<p>Name: ${name}</p>` +
-    `<p>Email: ${email}</p>` +
-    `<p>Message: ${message}</p>`;
+      let parcel =
+        `<p>Name: ${name}</p>` +
+        `<p>Email: ${email}</p>` +
+        `<p>Message: ${message}</p>`;
 
-  const transport = nodemailer.createTransport({
-    host: process.env.MAIL_HOST,
-    port: 465,
-    secure: true,
-    auth: {
-      user: process.env.MAIL_USER,
-      pass: process.env.MAIL_PASS,
-    },
-    tls: {
-      rejectUnauthorized: false,
-    },
-  });
+      const transport = nodemailer.createTransport({
+        host: process.env.MAIL_HOST,
+        port: 465,
+        secure: true,
+        auth: {
+          user: process.env.MAIL_USER,
+          pass: process.env.MAIL_PASS,
+        },
+        tls: {
+          rejectUnauthorized: false,
+        },
+      });
 
-  transport.verify((error) => {
-    if (error) {
-      console.log(error);
-    } else {
-      console.log('Ready to send email');
-    }
-  });
+      transport.verify((error) => {
+        if (error) {
+          console.log(error);
+        } else {
+          console.log('Ready to send email');
+        }
+      });
 
-  const mailOptions = {
-    from: process.env.MAIL_FROM,
-    to: email,
-    bcc: process.env.BCC,
-    subject: `Inquiry from web`,
-    html: parcel,
-  };
+      const mailOptions = {
+        from: process.env.MAIL_FROM,
+        to: email,
+        bcc: process.env.BCC,
+        subject: `Inquiry from web`,
+        html: parcel,
+      };
 
-  transport.sendMail(mailOptions, function (error, info) {
-    if (error) {
-      console.log('Error: ', error);
-    } else {
-      console.log('Email sent: ' + info.response);
+      transport.sendMail(mailOptions, function (error, info) {
+        if (error) {
+          console.log('Error: ', error);
+        } else {
+          console.log('Email sent: ' + info.response);
+        }
+      });
     }
   });
 });
