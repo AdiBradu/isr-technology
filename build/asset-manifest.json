@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.77ca07f3.css",
-    "main.js": "/static/js/main.4aa476ff.js",
+    "main.css": "/static/css/main.8c82958f.css",
+    "main.js": "/static/js/main.b4ba2af0.js",
     "static/js/787.6c2c6fb1.chunk.js": "/static/js/787.6c2c6fb1.chunk.js",
     "static/media/imnotLogoDark.svg": "/static/media/imnotLogoDark.f865781a7f493fcea8fa832565021314.svg",
     "static/media/imnotLogoLight.svg": "/static/media/imnotLogoLight.7ac0ca76fe9662b0d0be086dee0c1772.svg",
@@ -17,6 +17,7 @@
     "static/media/wazeIconLight.svg": "/static/media/wazeIconLight.3559451ea4cb09f6c5be398f03a4efb2.svg",
     "static/media/instagramIcon.svg": "/static/media/instagramIcon.d7ee05ebe3871f8d97ba0fed6aba6086.svg",
     "static/media/iconPartnerMeraki.svg": "/static/media/iconPartnerMeraki.b09123a5d31150054f48688e36d35afa.svg",
+    "static/media/assistanceIconLightBg.svg": "/static/media/assistanceIconLightBg.b4b638a168a0c2e9b40a9ac1aba03d4c.svg",
     "static/media/iconPartnerEpson.svg": "/static/media/iconPartnerEpson.63c79cc4b2aeef02eab3c13763ce7f58.svg",
     "static/media/iconPartnerNetgear.svg": "/static/media/iconPartnerNetgear.4704cb363d86cfd82cd8a5e9fe064bd9.svg",
     "static/media/logoPrimaryColorSimple.svg": "/static/media/logoPrimaryColorSimple.0c65982f0cbacfd9a101adf04020406f.svg",
@@ -30,12 +31,12 @@
     "index.html": "/index.html",
     "static/media/youtubeIcon.svg": "/static/media/youtubeIcon.d97eb5d786ed081287ac728371dd7672.svg",
     "static/media/facebookIcon.svg": "/static/media/facebookIcon.0d724a3844c289cb3e968938f68f3515.svg",
-    "main.77ca07f3.css.map": "/static/css/main.77ca07f3.css.map",
-    "main.4aa476ff.js.map": "/static/js/main.4aa476ff.js.map",
+    "main.8c82958f.css.map": "/static/css/main.8c82958f.css.map",
+    "main.b4ba2af0.js.map": "/static/js/main.b4ba2af0.js.map",
     "787.6c2c6fb1.chunk.js.map": "/static/js/787.6c2c6fb1.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.77ca07f3.css",
-    "static/js/main.4aa476ff.js"
+    "static/css/main.8c82958f.css",
+    "static/js/main.b4ba2af0.js"
   ]
 }
