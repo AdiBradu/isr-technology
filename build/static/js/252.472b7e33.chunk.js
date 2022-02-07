@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkisr_technology=self.webpackChunkisr_technology||[]).push([[252],{9252:function(c,e,s){c.exports=s.p+"static/media/voip.319ffac987197c803155.md"}}]);

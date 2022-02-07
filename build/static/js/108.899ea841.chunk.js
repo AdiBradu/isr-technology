@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkisr_technology=self.webpackChunkisr_technology||[]).push([[108],{2108:function(e,s,c){e.exports=c.p+"static/media/cloud-services.ea923d266f2774ec0125.md"}}]);
