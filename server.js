@@ -35,11 +35,9 @@ const validateHuman = async (token) => {
 app.post('/contact', async (req, res) => {
   let { name, email, message, token } = req.body;
 
-  const result = validateHuman(token).then( result => {
+  const validationResult =  await validateHuman(token).then( result => {
     return result
   });
-
-  console.log(result)
 
   let parcel =
   `<p>Name: ${name}</p>` +
@@ -75,7 +73,7 @@ app.post('/contact', async (req, res) => {
     html: parcel,
   };
 
-  if (result) {
+  if (validationResult) {
     console.log('User is human. Proceed to send email.');
 
     transport.sendMail(mailOptions, function (error, info) {
@@ -86,6 +84,7 @@ app.post('/contact', async (req, res) => {
       }
     });
   }
+
 });
 
 app.listen(process.env.PORT, () => console.log('ISR server running...'));
