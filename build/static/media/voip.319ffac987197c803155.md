@@ -1,3 +1,0 @@
-Voice over Internet Protocol, or VoIP allows you to *make and receive phone calls over the internet*, making it a more affordable and customizable telephone solution than you traditional landline or PBX system.<br>
-<br>
-With a VoIP phone system, all voice communications are controlled from a central web platform regardless of how many extensions you have, employee location, or the devices they're using. You can have an office in Brickell, one in Key Biscayne, and another in Coral Gables. VoIP system even offer features like simultaneous ring, video conferencing and call recording. Local “Miami ISR technicians” can handle the VoIP installation and setup of all major providers such as Ring Central, Vonage, 8X8, Nextiva and others.

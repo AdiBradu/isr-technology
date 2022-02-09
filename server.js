@@ -30,19 +30,19 @@ const validateHuman = async (token) => {
     console.log('Bot');
     return false;
   }
-}
+};
 
 app.post('/contact', async (req, res) => {
   let { name, email, message, token } = req.body;
 
-  const validationResult =  await validateHuman(token).then( result => {
-    return result
+  const validationResult = await validateHuman(token).then((result) => {
+    return result;
   });
 
   let parcel =
-  `<p>Name: ${name}</p>` +
-  `<p>Email: ${email}</p>` +
-  `<p>Message: ${message}</p>`;
+    `<p>Name: ${name}</p>` +
+    `<p>Email: ${email}</p>` +
+    `<p>Message: ${message}</p>`;
 
   const transport = nodemailer.createTransport({
     host: process.env.MAIL_HOST,
@@ -84,7 +84,6 @@ app.post('/contact', async (req, res) => {
       }
     });
   }
-
 });
 
 app.listen(process.env.PORT, () => console.log('ISR server running...'));
