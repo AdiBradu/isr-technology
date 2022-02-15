@@ -3,7 +3,7 @@ const cors = require('cors');
 const bodyParser = require('body-parser');
 const path = require('path');
 const nodemailer = require('nodemailer');
-const { default: axios } = require('axios');
+const axios = require('axios');
 require('dotenv').config();
 
 const app = express();
