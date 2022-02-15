@@ -35,7 +35,7 @@ const validateHuman = async (token) => {
 app.post('/contact', async (req, res) => {
   let { name, email, message, token } = req.body;
 
-  await validateHuman(token);
+  // await validateHuman(token);
 
   let parcel =
     `<p>Name: ${name}</p>` +
