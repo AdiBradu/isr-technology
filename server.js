@@ -30,12 +30,12 @@ const validateHuman = async (token) => {
     console.log('Bot');
     return false;
   }
-};
+}; 
 
-app.post('/contact', async (req, res) => {
+app.post(`/contact`, async (req, res) => {
   let { name, email, message, token } = req.body;
 
-  // await validateHuman(token);
+  await validateHuman(token);
 
   let parcel =
     `<p>Name: ${name}</p>` +
@@ -71,13 +71,13 @@ app.post('/contact', async (req, res) => {
     html: parcel,
   };
 
-  transport.sendMail(mailOptions, function (error, info) {
-    if (error) {
-      console.log('Error: ', error);
-    } else {
-      console.log('Email sent: ' + info.response);
-    }
-  });
+  // transport.sendMail(mailOptions, function (error, info) {
+  //   if (error) {
+  //     console.log('Error: ', error);
+  //   } else {
+  //     console.log('Email sent: ' + info.response);
+  //   }
+  // });
 
 });
 
