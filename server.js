@@ -34,7 +34,7 @@ const validateHuman = async (token) => {
 
 app.post(`/contact`, (req, res) => {
   let { name, email, message, token } = req.body;
-  res.send('Request succesful');
+  res.send('Request received');
   validateHuman(token);
 
   let parcel =
@@ -43,9 +43,6 @@ app.post(`/contact`, (req, res) => {
     `<p>Message: ${message}</p>`;
 
   const transport = nodemailer.createTransport({
-    sendmail: true,
-    newline: 'unix',
-    path: '/usr/sbin/sendmail',
     host: process.env.MAIL_HOST,
     port: 465,
     secure: true,
