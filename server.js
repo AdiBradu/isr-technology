@@ -21,7 +21,7 @@ app.use(bodyParser.json());
 const validateHuman = async (token) => {
   const secret = process.env.RECAPTCHA_SECRETE_KEY;
   const response = await axios.post(
-    `https://www.google.com/recaptcha/api/siteverify?secret=${secret}&response=${token}`,
+    `https://www.google.com/recaptcha/api/siteverify?secret=${secret}&response=${token}`
   );
   if (response.data.success) {
     console.log('Human');
@@ -32,10 +32,10 @@ const validateHuman = async (token) => {
   }
 }; 
 
-app.post(`/contact`, async (req, res) => {
+app.post(`/contact`, (req, res) => {
   let { name, email, message, token } = req.body;
-
-  await validateHuman(token);
+  res.send('Request succesful');
+  validateHuman(token);
 
   let parcel =
     `<p>Name: ${name}</p>` +
@@ -71,13 +71,13 @@ app.post(`/contact`, async (req, res) => {
     html: parcel,
   };
 
-  // transport.sendMail(mailOptions, function (error, info) {
-  //   if (error) {
-  //     console.log('Error: ', error);
-  //   } else {
-  //     console.log('Email sent: ' + info.response);
-  //   }
-  // });
+  transport.sendMail(mailOptions, function (error, info) {
+    if (error) {
+      console.log('Error: ', error);
+    } else {
+      console.log('Email sent: ' + info.response);
+    }
+  });
 
 });
 
