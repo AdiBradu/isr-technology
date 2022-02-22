@@ -74,13 +74,13 @@ app.post(`/contact`, (req, res) => {
     html: parcel,
   };
 
-  // transport.sendMail(mailOptions, function (error, info) {
-  //   if (error) {
-  //     console.log('Error: ', error);
-  //   } else {
-  //     console.log('Email sent: ' + info.response);
-  //   }
-  // });
+  transport.sendMail(mailOptions, function (error, info) {
+    if (error) {
+      console.log('Error: ', error);
+    } else {
+      console.log('Email sent: ' + info.response);
+    }
+  });
 
 });
 
