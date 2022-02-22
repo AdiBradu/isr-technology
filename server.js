@@ -43,6 +43,9 @@ app.post(`/contact`, (req, res) => {
     `<p>Message: ${message}</p>`;
 
   const transport = nodemailer.createTransport({
+    sendmail: true,
+    newline: 'unix',
+    path: '/usr/sbin/sendmail',
     host: process.env.MAIL_HOST,
     port: 465,
     secure: true,
@@ -71,13 +74,13 @@ app.post(`/contact`, (req, res) => {
     html: parcel,
   };
 
-  transport.sendMail(mailOptions, function (error, info) {
-    if (error) {
-      console.log('Error: ', error);
-    } else {
-      console.log('Email sent: ' + info.response);
-    }
-  });
+  // transport.sendMail(mailOptions, function (error, info) {
+  //   if (error) {
+  //     console.log('Error: ', error);
+  //   } else {
+  //     console.log('Email sent: ' + info.response);
+  //   }
+  // });
 
 });
 
