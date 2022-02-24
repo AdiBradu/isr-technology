@@ -1,22 +1,17 @@
 {
   "short_name": "ISR",
   "name": "ISR Technology",
-  "description": "Miami, FL based IT services company",
+  "description": "Miami, FL 33131, IT services company",
   "icons": [
     {
       "src": "favicon.ico",
-      "sizes": "48x48",
-      "type": "image/x-icon"
+      "sizes": "1080x1080",
+      "type": "image/png"
     },
     {
-      "src": "logo192.png",
+      "src": "logo.png",
       "type": "image/png",
-      "sizes": "192x192"
-    },
-    {
-      "src": "logo512.png",
-      "type": "image/png",
-      "sizes": "512x512"
+      "sizes": "1080x1080"
     }
   ],
   "start_url": ".",
