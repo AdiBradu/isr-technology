@@ -4,11 +4,6 @@
   "description": "Miami, FL 33131, IT services company",
   "icons": [
     {
-      "src": "favicon.ico",
-      "sizes": "1080x1080",
-      "type": "image/png"
-    },
-    {
       "src": "logo.png",
       "type": "image/png",
       "sizes": "1080x1080"
