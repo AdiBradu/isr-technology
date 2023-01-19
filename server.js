@@ -21,7 +21,7 @@ app.use(bodyParser.json());
 const validateHuman = async (token) => {
   const secret = process.env.RECAPTCHA_SECRETE_KEY;
   const response = await axios.post(
-    `https://www.google.com/recaptcha/api/siteverify?secret=${secret}&response=${token}`
+    `https://www.google.com/recaptcha/api/siteverify?secret=${secret}&response=${token}`,
   );
   if (response.data.success) {
     console.log('Human');
@@ -30,7 +30,7 @@ const validateHuman = async (token) => {
     console.log('Bot');
     return false;
   }
-}; 
+};
 
 app.post(`/contact`, (req, res) => {
   let { name, email, message, token } = req.body;
@@ -78,7 +78,6 @@ app.post(`/contact`, (req, res) => {
       console.log('Email sent: ' + info.response);
     }
   });
-
 });
 
 app.listen(process.env.PORT, () => console.log('ISR server running...'));
