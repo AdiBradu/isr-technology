@@ -2,9 +2,11 @@ const express = require('express');
 const cors = require('cors');
 const bodyParser = require('body-parser');
 const path = require('path');
-const nodemailer = require('nodemailer');
 const axios = require('axios');
 require('dotenv').config();
+//Sendgrid
+const sgMail = require('@sendgrid/mail');
+sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 
 const app = express();
 
@@ -33,6 +35,7 @@ const validateHuman = async (token) => {
 };
 
 app.post(`/contact`, (req, res) => {
+  console.log(`request received`);
   let { name, email, message, token } = req.body;
   res.send('Request received');
   validateHuman(token);
@@ -42,42 +45,21 @@ app.post(`/contact`, (req, res) => {
     `<p>Email: ${email}</p>` +
     `<p>Message: ${message}</p>`;
 
-  const transport = nodemailer.createTransport({
-    host: process.env.MAIL_HOST,
-    port: 465,
-    secure: true,
-    auth: {
-      user: process.env.MAIL_USER,
-      pass: process.env.MAIL_PASS,
-    },
-    tls: {
-      rejectUnauthorized: false,
-    },
-  });
-
-  transport.verify((error) => {
-    if (error) {
-      console.log(error);
-    } else {
-      console.log('Ready to send email');
-    }
-  });
-
-  const mailOptions = {
-    from: process.env.MAIL_FROM,
-    to: email,
-    bcc: process.env.BCC,
+  //SendGrid
+  const msg = {
+    to: process.env.SENDGRID_MAIL_TO,
+    from: process.env.SENDGRID_MAIL_FROM,
     subject: `Inquiry from web`,
     html: parcel,
   };
-
-  transport.sendMail(mailOptions, function (error, info) {
-    if (error) {
-      console.log('Error: ', error);
-    } else {
-      console.log('Email sent: ' + info.response);
-    }
-  });
+  sgMail
+    .send(msg)
+    .then(() => {
+      console.log('Email sent');
+    })
+    .catch((error) => {
+      console.error(error);
+    });
 });
 
 app.listen(process.env.PORT, () => console.log('ISR server running...'));
