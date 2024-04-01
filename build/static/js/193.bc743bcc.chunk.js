@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkisr_technology=self.webpackChunkisr_technology||[]).push([[193],{9193:(e,s,c)=>{e.exports=c.p+"static/media/managed-it.1e128730033938ff6cc7.md"}}]);

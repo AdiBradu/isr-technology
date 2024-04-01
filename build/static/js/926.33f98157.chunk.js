@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkisr_technology=self.webpackChunkisr_technology||[]).push([[926],{926:(c,e,s)=>{c.exports=s.p+"static/media/contact.cd48082a69713adb91b3.md"}}]);

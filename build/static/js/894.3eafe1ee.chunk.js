@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkisr_technology=self.webpackChunkisr_technology||[]).push([[894],{5894:function(e,s,c){e.exports=c.p+"static/media/cybersecurity.49758686e9a3f652a522.md"}}]);

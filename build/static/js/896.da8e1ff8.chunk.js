@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkisr_technology=self.webpackChunkisr_technology||[]).push([[896],{3896:(e,s,c)=>{e.exports=c.p+"static/media/web.5b1bb8c50c5b550a7111.md"}}]);

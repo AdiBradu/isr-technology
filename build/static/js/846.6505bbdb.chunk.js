@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkisr_technology=self.webpackChunkisr_technology||[]).push([[846],{5846:function(e,s,t){e.exports=t.p+"static/media/surveillance-systems.d09e4a310f19bb4136a6.md"}}]);

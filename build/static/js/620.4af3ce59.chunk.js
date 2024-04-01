@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkisr_technology=self.webpackChunkisr_technology||[]).push([[620],{3620:(e,s,c)=>{e.exports=c.p+"static/media/services.95e2a325bf25eb8e4f5f.md"}}]);

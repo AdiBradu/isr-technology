@@ -3,11 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@sendgrid/mail": "^7.7.0",
+    "@sendgrid/mail": "^8.1.2",
     "@testing-library/jest-dom": "^5.16.1",
     "@testing-library/react": "^12.1.2",
     "@testing-library/user-event": "^13.5.0",
-    "axios": "^0.24.0",
+    "axios": "^1.6.8",
     "body-parser": "^1.19.1",
     "cors": "^2.8.5",
     "dotenv": "^10.0.0",
@@ -24,7 +24,7 @@
     "react-responsive": "^9.0.0-beta.5",
     "react-router": "^6.2.1",
     "react-router-dom": "^6.2.1",
-    "react-scripts": "^1.1.5",
+    "react-scripts": "^5.0.1",
     "swiper": "^7.4.1",
     "web-vitals": "^2.1.3"
   },

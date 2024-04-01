@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkisr_technology=self.webpackChunkisr_technology||[]).push([[903],{9903:(e,s,t)=>{e.exports=t.p+"static/media/smart-home-automation.e1d5f35dc612a1464c2c.md"}}]);
